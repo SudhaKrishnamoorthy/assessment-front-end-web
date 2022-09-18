@@ -18,8 +18,9 @@
 		<p>Hello World</p>
 		<!-- insert hello world here -->
 
-		<img src="https://placekitten.com/g/100/150">
-
+		<img src="https://placekitten.com/g/100/150" <A onmouseover="alert('You are awesome')"href=""</A>
+		
+			  
 		<h2>Contact Us</h2>
 		
 		
@@ -30,19 +31,22 @@
 			Message:
 			<input type="textarea">
 
-			<input type="submit"><br>
+			
+			<button onclick="myFunction()">Submit</button>
+			<script>
+				function myFunction() {
+					alert("Your form has been submitted successfully");
+				}
+			</script>
 					
 		</form>
 		<p>How did you hear about this website?:</p>
-		<form action="/action_page.php">
-		<input type="radio" id="Google" name="fav_browser" value="Google">
-		<label for="Google">Google</label><br>
-		<input type="radio" id="A friend" name="fav_person" value="A friend">
-		<label for="A friend">A friend</label><br>
-		<input type="radio" id="Other" name="fav_other" value="Other">
-		<label for="Other">Other</label><br><br>
-		<input type="submit" value="Submit">
-		</form> 
+		<form>
+			<label for="Google">Google:</label><input type="checkbox" id="Google" value="Google"/>
+			<label for="A friend">A friend:</label><input type="checkbox" id="A friend" value="A friend"/>
+			<label for="Other">Other:</label><input type="checkbox" id="Other" value="Other"/>
+		</form>
+		
 		<p> Welcome to this website! Feel free to explore the site and leave your comments!</p>
 		<ul>
 			<li>Congratulations on finding this site!You're awesome! </li>
