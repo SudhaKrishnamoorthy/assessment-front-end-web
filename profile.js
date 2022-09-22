@@ -3,7 +3,7 @@ const favColor = document.querySelector('#color')
 
 favColor.addEventListener('click', function () {
     alert('My favorite color is red')
-})
+    })
 
 const favPlace = document.querySelector('#place')
 favPlace.addEventListener('click', function() {
@@ -15,3 +15,11 @@ favRitual.addEventListener('click', function() {
     alert('My favorite ritual is to meditate' )
 })
 
+
+document.addEventListener('click', function handleClick(event){
+    event.target.classList.add('bg-yellow', 'font-size')
+})
+
+
+
+    
